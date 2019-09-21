@@ -1,0 +1,47 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    ft_debut.txt                                       :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: oldurosi <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/09/16 13:31:46 by oldurosi          #+#    #+#              #
+#    Updated: 2019/09/21 16:00:31 by oldurosi         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+1. In the most concise way possible, answer this question, what is 42? How would you describe 42 to someone who doesn’t know what 42 is?
+42 is a peer to peer free software engineering school, giving the students the environment of an workplace having them to solve problems and think critically.
+
+2. Why are there no instructions on the initial 42 logic tests?
+This is to let the student figure out the problem and solving it without being guided.
+
+3. What are the core 42 principles?
+42's core principles are hardworking by pushing you not to limit yourself and by teaming up with others.
+
+4. If somebody is thinking of going to 42, but has no coding experience - do you really think it’s worth their time?
+Yes it really worths the time, because it opens up the person's mind in to the world of programing and with the help of his/her peers, the person would be carried along in understanding things
+
+5. What makes 42 unique?
+42 is self learning and learning is done at your own pace that suites you better.
+
+6. What do you think you’re learning the most at 42?
+Critical thinking, and this is vital here at 42. 42 develops your critical thinking as well
+
+7. Imagine (this will happen very soon in real life!), you’ve been stuck on the problem for a while and have no idea what to do - what your next steps would be?
+With my experience in 42, i face a problem, i check the manual and if it's not solved yet, i check google then after if not solved, i ask my peers. Similarly in the real world we would have the people we are working with and we can approach them for help.
+
+8. How will you ensure that your personal level of motivation remains high on a daily basis to complete at least 1 level per month without the Piscine pressure and strict deadlines?
+By ensuring a daily routine, to ensure proper planning and time management
+
+9. If someone asks you why it says internships are required on the 42 website, but they do not offer job placement, what would you say?
+Internships and jobs are required at 42 School. Maybe they want us to grow personally, get some greens, and be successful on life? Our foundation as a society is to contribute back, and one way to do it is to work. The important thing is that you enjoy doing it. It is what going to define you later in life. If you do well in 42 School, you already are working on your teamwork, communication, knowledge in doing research, rigor, creativity, adaptability, and other soft skills.
+
+10. How do the internships work? Is it mandatory that you have to reach a certain level before leaving on an internship or can you validate it anytime you find one?
+It is mandatory to reach level 7 before going on internship
+
+11. How does 42 help you adapt to a work place?
+In a great way, it has a workplace environment and activities there are organised just the way it's similarly expected in a work environment 
+
+Bonus. Find 5 cadets with at least level 5 and ask what project they are working on currently
+So the few people i met were on similar project but other gave be the projects they had done, still above level 5. Projects like Dockers, Hypertube, roger-skyline, corewar and wolf3d were briefly discussed.
