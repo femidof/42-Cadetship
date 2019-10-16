@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oldurosi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 15:51:12 by oldurosi          #+#    #+#             */
-/*   Updated: 2019/10/15 18:30:33 by oldurosi         ###   ########.fr       */
+/*   Created: 2019/09/20 02:03:01 by oldurosi          #+#    #+#             */
+/*   Updated: 2019/10/14 01:31:39 by oldurosi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <string.h>
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char				*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	size_t i;
+	char			*result;
 
-	if (n == 0)
-		return (0);
-	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
-		++i;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if (!s || !(result = ft_memalloc(len + 1)))
+		return (NULL);
+	result = ft_strncpy(result, (char*)s + start, len);
+	return (result);
 }

@@ -6,13 +6,13 @@
 /*   By: oldurosi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 16:41:43 by oldurosi          #+#    #+#             */
-/*   Updated: 2019/09/17 17:18:24 by oldurosi         ###   ########.fr       */
+/*   Updated: 2019/10/15 08:25:24 by oldurosi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *strstr(const char *hystk, const char *ndle)
+char	*ft_strstr(const char *hystk, const char *ndle)
 {
 	int i;
 	int j;
@@ -22,5 +22,15 @@ char *strstr(const char *hystk, const char *ndle)
 		return ((char*)hystk);
 	while (hystk[i])
 	{
+		if (hystk[i] == ndle[0])
+		{
+			j = 1;
+			while (ndle[j] != '\0' && hystk[i + j] == ndle[j])
+				++j;
+			if (ndle[j] == '\0')
+				return ((char*)&hystk[i]);
+		}
+		i++;
 	}
+	return (0);
 }

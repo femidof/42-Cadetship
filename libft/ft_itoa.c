@@ -1,25 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oldurosi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 15:51:12 by oldurosi          #+#    #+#             */
-/*   Updated: 2019/10/15 18:30:33 by oldurosi         ###   ########.fr       */
+/*   Created: 2019/10/10 04:54:23 by oldurosi          #+#    #+#             */
+/*   Updated: 2019/10/16 01:08:41 by oldurosi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
+#include <string.h>
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_itoa(int n)
 {
-	size_t i;
+	size_t	i;
+	size_t	n_size;
+	char	*str;
 
-	if (n == 0)
-		return (0);
 	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
-		++i;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	n_size = ft_nbrlen(n);
+	str = (char *)malloc(sizeof(char) * (n_size + 1));
+	if (str == 0)
+		return (0);
+	str[n_size] = 0;
+	if (n < 0)
+	{
+		str[0] = '-';
+		n *= -1;
+		i += 1;
+	}
+	while (i < n_size--)
+	{
+		str[n_size] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (str);
 }

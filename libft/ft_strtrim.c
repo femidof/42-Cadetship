@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oldurosi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 15:51:12 by oldurosi          #+#    #+#             */
-/*   Updated: 2019/10/15 18:30:33 by oldurosi         ###   ########.fr       */
+/*   Created: 2019/09/20 15:17:49 by oldurosi          #+#    #+#             */
+/*   Updated: 2019/10/15 19:15:52 by oldurosi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strtrim(char const *s)
 {
-	size_t i;
+	size_t	i;
+	size_t	j;
+	char	*str;
 
-	if (n == 0)
-		return (0);
+	if (!s)
+		return (NULL);
 	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
-		++i;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	j = 0;
+	while (s[i] && ft_iswspace(s[i]))
+		i += 1;
+	j = ft_strlen(&s[i]) - 1;
+	while (s[i] && ft_iswspace(s[j + i]))
+		j -= 1;
+	if (!(str = ft_strnew(j + 1)))
+		return (NULL);
+	ft_strncpy(str, (s + i), (j + 1));
+	return (str);
 }
